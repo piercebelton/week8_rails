@@ -1,0 +1,22 @@
+<h1>Welcome to the Registration Page!</h1>
+
+<h3>Register a new user</h3>
+<form action="/users/confirmation" method="post">
+  <input type="text" name="full_name" placeholder="Full Name"> </br>
+  <input type="text" name="address" placeholder="Street Address"></br>
+  <input type="text" name="city" placeholder="City"></br>
+  <input type="text" name="state" placeholder="State"></br>
+  <input type="text" name="postal_code" placeholder="Postal Code"></br>
+  <input type="text" name="country" placeholder="Country"></br>
+  <input type="text" name="email_address" placeholder="Email Address"></br>
+  <input type="text" name="user_id" placeholder="User ID" required></br>
+  <input type="text" name="password" placeholder="Password" required></br>
+  <input type="submit" value="Register"></br>
+</form>
+
+<h3>Existing users login here!</h3>
+<form action="/users/home" method="get">
+  <input type="text" name="user_id" placeholder="Enter User ID" required></br>
+  <input type="text" name="password" placeholder="Enter Password" required></br>
+  <input type="submit" value="Login"></br>
+</form>
